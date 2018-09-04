@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npm install parcel-bundler && parcel build index.html"
+  },
   "devDependencies": {
     "cssnano": "^4.0.5"
   }
