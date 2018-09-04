@@ -73,7 +73,7 @@
           <div class="text-green-lightest command-section hidden" data-section="generate">
 
             <div class="flex-1">
-              <p class="mb-5">Create a file - currently limited to component or ES6 class - for React, using current best-practise.</p>
+              <p class="mb-5">Create a file - currently a component, route or ES6 class - for React, using current best-practise.</p>
               <p>Simple example</p>
 
               <pre class="bg-black rounded text-white p-4 w-full mt-5">crab generate component components/Menu</pre>
@@ -90,7 +90,9 @@
 
               <pre class="bg-black rounded text-white p-4 w-full my-5">crab g components/ui/nav/NavBar</pre>
 
-              <p>It is also not necessary to be in the root, and more commonly easier to execute from the "app/components" directory.</p>
+              <p class="mb-5">It is also not necessary to be in the root, and more commonly easier to execute from the "app/components" directory.</p>
+
+              <p>You can now also generate a route, which will automatically try to add to the router and optionally the menu.</p>
 
             </div>
             <div class="flex-1">
@@ -108,6 +110,22 @@
                   <tr>
                     <td>-f, --functional</td>
                     <td>Creates a functional rather than class based component</td>
+                  </tr>
+                  <tr>
+                    <td>-r, --redux</td>
+                    <td>Add Redux boilerplate to this code </td>
+                  </tr>
+                  <tr>
+                    <td>-t, --typescript</td>
+                    <td>Create a typescript component rather than ES6</td>
+                  </tr>
+                  <tr>
+                    <td>--menu</td>
+                    <td>Add route to menu if possible (route only)</td>
+                  </tr>
+                  <tr>
+                    <td>--path [value]</td>
+                    <td>The path to use for a route link (route only)</td>
                   </tr>
                   <tr>
                     <td>--content
@@ -164,6 +182,10 @@ code .</pre>
                   <tr>
                     <td>-r, --redux</td>
                     <td>Include redux dependencies and files, and create App as a working redux aware container</td>
+                  </tr>
+                  <tr>
+                    <td>-t, --typescript</td>
+                    <td>Create a TypeScript project. This will save as a permanent setting</td>
                   </tr>
                   <tr>
                     <td>--no-git</td>
