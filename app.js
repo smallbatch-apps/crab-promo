@@ -45,22 +45,3 @@ document.getElementById('command-buttons').addEventListener('click', ({target}) 
     buttonActivate(target);
 	}
 });
-
-// jquery alternative
-
-// $('#command-buttons').on('click', '.command-button', function(){
-//   if (this.hasClass('bg-green-darker')) {
-//     return false;
-//   }
-  
-//   this.addClass('text-green bg-green-darker')
-//     .removeClass('text-green-darker bg-green')
-//     .siblings.removeClass('text-green bg-green-darker')
-//     .addClass('text-green-darker bg-green');
-
-//   $('.command-section', $('#command-sections'))
-//     .removeClass('block md:flex').addClass('hidden');
-
-//   $(`[data-section=${this.data('section')}]`, $('#command-sections'))
-//     .addClass('block md:flex').removeClass('hidden');
-// });
